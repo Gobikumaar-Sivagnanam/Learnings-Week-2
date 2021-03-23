@@ -1,7 +1,7 @@
 
 PROJECT_NAME = done
 SRC = test.c \
-src/product.c src/sum.c src/division.c src/difference.c \
+src1/product.c src1/sum.c src1/division.c src1/difference.c \
 inc/funp.h
 
 INC = inc
