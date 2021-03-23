@@ -1,6 +1,19 @@
 
-ayo: sum.c difference.c product.c division.c test.c funp.h
-	gcc sum.c product.c difference.c division.c test.c -o ayo
+PROJECT_NAME = done
+SRC = test.c \
+src/product.c src/sum.c src/division.c src/difference.c \
+inc/funp.h
 
-clean:
-	rm ayo
+INC = inc
+
+$(PROJECT_NAME): $(SRC)
+	gcc $(SRC) -I $(INC) -o $(PROJECT_NAME)
+
+run: $(PROJECT_NAME)
+	./$(PROJECT_NAME)
+
+#all : test.c src/product.c src/sum.c src/division.c src/difference.c inc/funp.h
+#	gcc test.c src/product.c src/sum.c src/division.c src/difference.c -I inc -o all
+
+#all : $(SRC)
+#	gcc $(SRC) -I $(INC) -o all
