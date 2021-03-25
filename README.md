@@ -2,4 +2,4 @@
 
 Practicing concepts 
 
-[testing the link](https://github.com/Gobikumaar-Sivagnanam/MiniProject_Template)
+[By 255919 Gobikumaar-Sivagnanam](https://github.com/Gobikumaar-Sivagnanam/Learnings-Week-2)
