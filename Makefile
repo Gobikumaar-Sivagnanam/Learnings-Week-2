@@ -25,5 +25,14 @@ coverage: ${PROJECT_NAME}
 	./$(PROJECT_NAME) 
 	gcov -a driver.c
 
+staticcheck:
+	cppcheck --enable=all driver.c inc/funp.h
+
+memcheck:
+	valgrind ./$(PROJECT_NAME)
+
+analyse: run test coverage staticcheck memcheck
+
+
 clean: 
 	rm -rf $(PROJECT_NAME) *.gcov *.gcda *.gcno
